@@ -484,6 +484,10 @@ h1 {
     font-size: 2.5rem;
   }
 
+  .footer {
+    font-size: 0.7rem !important;
+  }
+
   .info-box {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.8rem;
@@ -495,8 +499,8 @@ h1 {
     font-size: 0.8rem !important;
   }
 
-  .card-title{
-        font-size: 0.8rem !important;
+  .card-title {
+    font-size: 0.8rem !important;
   }
 
   #img-chess {
