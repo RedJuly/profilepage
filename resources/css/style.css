@@ -293,19 +293,20 @@ h1 {
   z-index: 1;
 }
 
-#img-facebook:hover+.info-marketing {
-  visibility: visible;
-  opacity: 1;
-  left: 28.2%;
-  top: 30rem;
-  margin-left: 7rem;
-  z-index: 1;
-}
-
 @media (max-width: 1080px) {
   #img-chess {
     width: 3rem;
     top: 45rem;
+  }
+
+  .info-chess {
+    top: 35rem;
+    left: 23%;
+  }
+
+  #img-chess:hover+.info-chess {
+    top: 35rem;
+    left: 23%;
   }
 
   #img-facebook {
@@ -317,21 +318,63 @@ h1 {
     left: 18%;
   }
 
+  .info-marketing {
+    left: 20%;
+  }
+
+  .img-marketing:hover+.info-marketing {
+    left: 20%;
+  }
+
   #img-book {
     width: 7rem;
+  }
+
+  .info-books {
+    left: 5%;
+  }
+
+  #img-book:hover+.info-books {
+    left: 5%;
   }
 
   #img-pen {
     width: 4rem;
   }
 
+  .info-pen {
+    right: 11%;
+  }
+
+  #img-pen:hover+.info-pen {
+    right: 11%;
+  }
+
   #img-football {
     width: 5rem;
+  }
+
+  .info-football {
+    right: 15%;
+  }
+
+  #img-football:hover+.info-football {
+    right: 15%;
   }
 
   #img-screen {
     width: 8rem;
     top: 40rem;
+  }
+
+  .info-screen {
+    top: 32rem;
+    right: 10%;
+  }
+
+  #img-screen:hover+.info-screen {
+    top: 32rem;
+    right: 10%;
   }
 
   #img-portrait {
@@ -343,7 +386,7 @@ h1 {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 3rem;
   }
@@ -357,15 +400,32 @@ h1 {
     top: 25rem;
   }
 
+  .info-chess {
+    top: 15rem;
+  }
+
+  #img-chess:hover+.info-chess {
+    top: 15rem;
+  }
+
   #img-facebook {
     width: 5rem;
     top: 15rem;
+    left: 15%;
   }
 
   #img-google {
     width: 4rem;
     left: 18%;
     top: 10rem;
+  }
+
+  .info-marketing {
+    top: 15rem;
+  }
+
+  .img-marketing:hover+.info-marketing {
+    top: 15rem;
   }
 
   #img-book {
@@ -378,15 +438,40 @@ h1 {
     top: 13rem;
   }
 
+  .info-pen {
+    top: 13rem;
+  }
+
+  #img-pen:hover+.info-pen {
+    top: 13rem;
+  }
+
   #img-football {
     width: 5rem;
+    top: 7rem;
+    right: 17%;
+  }
+
+  .info-football {
+    top: 7rem;
+  }
+
+  #img-football:hover+.info-football {
     top: 7rem;
   }
 
   #img-screen {
     width: 8rem;
     top: 20rem;
-    right: 15%;
+    right: 10%;
+  }
+
+  .info-screen {
+    top: 10rem;
+  }
+
+  #img-screen:hover+.info-screen {
+    top: 10rem;
   }
 
   #img-portrait {
