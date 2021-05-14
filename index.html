@@ -5,12 +5,13 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"  media="print" onload="this.media='all'">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" media="print"
+    onload="this.media='all'">
   <link rel="icon" href="resources\img\favicon.ico">
   <link rel="stylesheet" href="resources\css\style.css">
   <script async src="https://kit.fontawesome.com/ac1e30d8af.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@400;500&family=Amatic+SC:wght@700&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@400;500&family=Amatic+SC:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <title>Aljoscha Krawulsky | Online Marketing Manager</title>
 </head>
@@ -28,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">In Progess</a>
+              <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasStart" role="button" aria-controls="offcanvasStart">Current Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">InProgress</a>
+              <a class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mailto:aljoscha.krawulsky@gmx.de">Contact me</a>
+              <a class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact me</a>
             </li>
           </ul>
           <a href="https://twitter.com/AKrawulsky"><span class="fab fa-twitter"></span></a>
@@ -45,13 +46,14 @@
     </div>
     <!-- Main portrait -->
 
-
+<!--  -->
     <div class="main-img">
+
 
       <h1>Hi,I'm Aljoscha</h1>
       <h2>Hover over the objects to get to know me.</h2>
 
-      <img src="resources\img\book.svg" alt="book-image"id="img-book" class="img-fluid floating-l">
+      <img src="resources\img\book.svg" alt="book-image" id="img-book" class="img-fluid floating-l">
 
       <div class="card border-light mb-3 info-books floating-l info-box" style="max-width: 18rem;">
         <div class="card-header">Book Nerd</div>
@@ -84,9 +86,9 @@
         </div>
       </div>
 
-      <img src="resources\img\character.svg"alt="Aljoscha-portrtait" id="img-portrait" class="img-fluid">
+      <img src="resources\img\character.svg" alt="Aljoscha-portrtait" id="img-portrait" class="img-fluid">
 
-      <img src="resources\img\screen.svg"alt="screen-image" id="img-screen" class="img-fluid floating-ms">
+      <img src="resources\img\screen.svg" alt="screen-image" id="img-screen" class="img-fluid floating-ms">
 
       <div class="card border-light mb-3 info-screen floating-ms info-box" style="max-width: 18rem;">
         <div class="card-header">Coding enthusiast</div>
@@ -119,7 +121,7 @@
         </div>
       </div>
 
-      <img src="resources\img\pen.svg"alt="pen-image" id="img-pen" class="img-fluid floating-l">
+      <img src="resources\img\pen.svg" alt="pen-image" id="img-pen" class="img-fluid floating-l">
 
       <div class="card border-light mb-3 info-pen floating-l info-box" style="max-width: 19rem;">
         <div class="card-header">Digital Drawing</div>
@@ -131,8 +133,42 @@
 
     </div>
   </section>
-  <!-- Projects -->
 
+  <!-- Offcanvas -->
+  <!-- Projects -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasStartLabel">Current Projects</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        WiP.
+      </div>
+    </div>
+  </div>
+
+  <!-- About me -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">About me</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    WiP.
+  </div>
+</div>
+
+<!-- Contact me -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Contact me</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    WiP.
+  </div>
+</div>
 
   <!-- Footer -->
   <div class="footer mt-auto py-3 bg-light">

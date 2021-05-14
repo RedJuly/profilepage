@@ -41,6 +41,13 @@ font-family: 'Ubuntu', sans-serif; */
   padding: 6px 16px;
 }
 
+.navbar .btn{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    color: #8f8f8f;
+    box-shadow: none;
+}
+
 /* Main Portrait */
 h1 {
   font-family: 'Amatic SC', cursive;
@@ -72,7 +79,6 @@ h1 {
   position: absolute;
   left: 20%;
   top: 35rem;
-  background-size: 345px 333px;
 }
 
 #img-google {
@@ -291,6 +297,48 @@ h1 {
   top: 30rem;
   margin-left: 7rem;
   z-index: 1;
+}
+
+/* Info cards */
+.info-box {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FCFAF8;
+}
+
+.card-header {
+  background-color: #f5eee6;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.text-low-margin {
+  margin-bottom: 0.2rem;
+}
+
+/* Offcanvas */
+
+.offcanvas-header{
+    background-color: #f5eee6;
+    text-align: center;
+      font-family: 'Amatic SC', cursive;
+}
+
+.offcanvas-title{
+  font-size: 2rem;
+      color: #8f8f8f;
+}
+
+.offcanvas-body{
+    background-color: #FCFAF8;
+}
+
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #f5eee6 !important;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 1080px) {
@@ -582,25 +630,4 @@ h1 {
   #img-portrait {
     width: 7rem;
   }
-}
-
-/* Info cards */
-.info-box {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.card-header {
-  background-color: #f5eee6;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.text-low-margin {
-  margin-bottom: 0.2rem;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  background-color: #f5eee6 !important;
 }
