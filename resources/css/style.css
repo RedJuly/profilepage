@@ -341,6 +341,57 @@ h1 {
   }
 }
 
+@media (max-width: 540px) {
+h1{
+  font-size: 3rem;
+}
+
+h2{
+ display: none;
+}
+
+#img-chess {
+  width: 3rem;
+  top: 25rem;
+}
+
+#img-facebook {
+  width: 5rem;
+  top: 15rem;
+}
+
+#img-google {
+  width: 4rem;
+  left: 18%;
+    top: 10rem;
+}
+
+#img-book {
+  width: 5rem;
+  top: 5rem;
+}
+
+#img-pen {
+  width: 4rem;
+  top: 13rem;
+}
+
+#img-football {
+  width: 5rem;
+    top: 7rem;
+}
+
+#img-screen {
+  width: 8rem;
+  top: 20rem;
+  right: 15%;
+}
+
+#img-portrait {
+  width: 8rem;
+}
+}
+
 /* Info cards */
 .info-box {
   font-family: 'Ubuntu', sans-serif;
