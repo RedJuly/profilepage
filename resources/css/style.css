@@ -41,11 +41,11 @@ font-family: 'Ubuntu', sans-serif; */
   padding: 6px 16px;
 }
 
-.navbar .btn{
-    font-family: 'Amatic SC', cursive;
-    font-size: 2rem;
-    color: #8f8f8f;
-    box-shadow: none;
+.navbar .btn {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  color: #8f8f8f;
+  box-shadow: none;
 }
 
 /* Main Portrait */
@@ -316,24 +316,20 @@ h1 {
 }
 
 /* Offcanvas */
-
-.offcanvas-header{
-    background-color: #f5eee6;
-    text-align: center;
-
+.offcanvas-header {
+  background-color: #f5eee6;
+  text-align: center;
 }
 
-.offcanvas-title{
+.offcanvas-title {
   font-size: 2rem;
   color: #8f8f8f;
   font-family: 'Amatic SC', cursive;
 }
 
-.offcanvas-body{
-    background-color: #FCFAF8;
+.offcanvas-body {
+  background-color: #FCFAF8;
 }
-
-
 
 /* Footer */
 .footer {
@@ -440,7 +436,7 @@ h1 {
     font-size: 3rem;
   }
 
-  h2 {
+  #introduction {
     display: none;
   }
 
