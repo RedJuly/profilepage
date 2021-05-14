@@ -479,6 +479,107 @@ h1 {
   }
 }
 
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .info-box {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .card-header {
+    background-color: #f5eee6;
+    font-weight: bold;
+    font-size: 0.8rem !important;
+  }
+
+  .card-title{
+        font-size: 0.8rem !important;
+  }
+
+  #img-chess {
+    width: 2rem;
+    top: 24rem;
+    left: 18%;
+  }
+
+  .info-chess {
+    top: 10rem;
+  }
+
+  #img-chess:hover+.info-chess {
+    top: 10rem;
+  }
+
+  #img-facebook {
+    width: 3rem;
+    top: 15rem;
+    left: 12%;
+  }
+
+  #img-google {
+    width: 3rem;
+    left: 11%;
+    top: 10rem;
+  }
+
+  .info-marketing {
+    top: 5rem;
+  }
+
+  .img-marketing:hover+.info-marketing {
+    top: 5rem;
+  }
+
+  #img-book {
+    width: 4rem;
+    top: 5rem;
+  }
+
+  #img-pen {
+    width: 3rem;
+    top: 13rem;
+  }
+
+  #img-football {
+    width: 4rem;
+    top: 5rem;
+    right: 5%;
+  }
+
+  .info-football {
+    top: 5rem;
+    right: 6%;
+  }
+
+  #img-football:hover+.info-football {
+    top: 5rem;
+    right: 6%;
+  }
+
+  #img-screen {
+    width: 6rem;
+    top: 20rem;
+    right: 4%;
+  }
+
+  .info-screen {
+    top: 10rem;
+    right: 0%;
+  }
+
+  #img-screen:hover+.info-screen {
+    top: 10rem;
+    right: 0%;
+  }
+
+  #img-portrait {
+    width: 7rem;
+  }
+}
+
 /* Info cards */
 .info-box {
   font-family: 'Ubuntu', sans-serif;
