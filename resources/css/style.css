@@ -25,20 +25,13 @@ font-family: 'Ubuntu', sans-serif; */
   color: #1DA1F2;
 }
 
-.nav-item {
-  padding: 6px 18px;
-}
-
-.nav-item:hover {
-  text-decoration: underline 2.5px;
-}
-
 .navbar {
   padding: 0.1rem 0 0.8rem;
 }
 
 .navbar li {
   padding: 6px 16px;
+  transition: opacity 0.3s;
 }
 
 .navbar .btn {
@@ -46,6 +39,14 @@ font-family: 'Ubuntu', sans-serif; */
   font-size: 2rem;
   color: #8f8f8f;
   box-shadow: none;
+}
+
+.navbar .btn:hover{
+  text-decoration: underline #8f8f8f 2.2px;
+}
+
+.navbar ul:hover > li:not(:hover){
+  opacity: 0.5;
 }
 
 /* Main Portrait */
@@ -184,6 +185,30 @@ h1 {
     transform: translate(0, -0px);
   }
 }
+
+/* Blur effect on all but hover */
+
+.main-img{
+  pointer-events: none;
+}
+
+.main-img > .blur{
+  pointer-events: auto;
+  transition: filter 0.7s linear;
+}
+
+.non-blur{
+  pointer-events: none !important;
+}
+
+#img-portrait{
+  pointer-events: none;
+}
+
+.main-img:hover > .blur:not(:hover){
+    filter: blur(2.5px);
+}
+
 
 .info-books {
   position: absolute;
@@ -337,6 +362,8 @@ h1 {
   background-color: #f5eee6 !important;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
 
 @media (max-width: 1080px) {
   #img-chess {
