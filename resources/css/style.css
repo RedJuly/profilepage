@@ -320,12 +320,13 @@ h1 {
 .offcanvas-header{
     background-color: #f5eee6;
     text-align: center;
-      font-family: 'Amatic SC', cursive;
+
 }
 
 .offcanvas-title{
   font-size: 2rem;
-      color: #8f8f8f;
+  color: #8f8f8f;
+  font-family: 'Amatic SC', cursive;
 }
 
 .offcanvas-body{
