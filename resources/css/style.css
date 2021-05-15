@@ -1,8 +1,8 @@
-/* Color profile: https://colorhunt.co/palette/257756*/
-/* #dddddd  #f9f3f3 #f7d9d9 #C47B74*/
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
+
+/* || Header */
+
 /* Navbar */
+
 #top-container {
   background-color: #f5eee6;
 }
@@ -41,6 +41,8 @@ font-family: 'Ubuntu', sans-serif; */
   box-shadow: none;
 }
 
+/* Hover effects */
+
 .navbar .btn:hover{
   text-decoration: underline #8f8f8f 2.2px;
 }
@@ -49,7 +51,18 @@ font-family: 'Ubuntu', sans-serif; */
   opacity: 0.5;
 }
 
-/* Main Portrait */
+.navbar .social-icons:hover > a:not(:hover){
+  opacity: 0.5;
+}
+
+.navbar a{
+  transition: opacity 0.3s;
+}
+
+/* || Main Image */
+
+/* General Styling */
+
 h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 7rem;
@@ -67,6 +80,8 @@ h1 {
   position: relative;
   background-color: #fff;
 }
+
+/* Image components */
 
 #img-chess {
   width: 5rem;
@@ -209,6 +224,7 @@ h1 {
     filter: blur(2.5px);
 }
 
+/* Info-Box-Visibilty */
 
 .info-books {
   position: absolute;
@@ -217,16 +233,13 @@ h1 {
   transition: visibility 0s, opacity 0.5s linear;
   left: 10.2%;
   top: 15rem;
+  margin-left: 13rem;
   z-index: 1;
 }
 
 #img-book:hover+.info-books {
   visibility: visible;
   opacity: 1;
-  left: 10.2%;
-  top: 15rem;
-  margin-left: 13rem;
-  z-index: 1;
 }
 
 .info-chess {
@@ -237,15 +250,12 @@ h1 {
   left: 25.2%;
   top: 55rem;
   z-index: 1;
+  margin-left: 5rem;
 }
 
 #img-chess:hover+.info-chess {
   visibility: visible;
   opacity: 1;
-  left: 25.2%;
-  top: 55rem;
-  margin-left: 5rem;
-  z-index: 1;
 }
 
 .info-football {
@@ -255,16 +265,13 @@ h1 {
   transition: visibility 0s, opacity 0.5s linear;
   right: 20.2%;
   top: 17rem;
+  margin-right: 10rem;
   z-index: 1;
 }
 
 #img-football:hover+.info-football {
   visibility: visible;
   opacity: 1;
-  right: 20.2%;
-  top: 17rem;
-  margin-right: 10rem;
-  z-index: 1;
 }
 
 .info-screen {
@@ -274,16 +281,13 @@ h1 {
   transition: visibility 0s, opacity 0.5s linear;
   right: 18.2%;
   top: 45rem;
+  margin-right: 15rem;
   z-index: 1;
 }
 
 #img-screen:hover+.info-screen {
   visibility: visible;
   opacity: 1;
-  right: 18.2%;
-  top: 45rem;
-  margin-right: 15rem;
-  z-index: 1;
 }
 
 .info-pen {
@@ -293,16 +297,13 @@ h1 {
   transition: visibility 0s, opacity 0.5s linear;
   right: 13.2%;
   top: 33rem;
+  margin-right: 7rem;
   z-index: 1;
 }
 
 #img-pen:hover+.info-pen {
   visibility: visible;
   opacity: 1;
-  right: 13.2%;
-  top: 33rem;
-  margin-right: 7rem;
-  z-index: 1;
 }
 
 .info-marketing {
@@ -312,16 +313,13 @@ h1 {
   transition: visibility 0s, opacity 0.5s linear;
   left: 28.2%;
   top: 30rem;
+  margin-left: 7rem;
   z-index: 1;
 }
 
 .img-marketing:hover+.info-marketing {
   visibility: visible;
   opacity: 1;
-  left: 28.2%;
-  top: 30rem;
-  margin-left: 7rem;
-  z-index: 1;
 }
 
 /* Info cards */
@@ -340,7 +338,10 @@ h1 {
   margin-bottom: 0.2rem;
 }
 
-/* Offcanvas */
+/* || Offcanas */
+
+/* General Styling */
+
 .offcanvas-header {
   background-color: #f5eee6;
   text-align: center;
@@ -364,6 +365,7 @@ h1 {
 }
 
 
+/* Breakpoints */
 
 @media (max-width: 1080px) {
   #img-chess {
@@ -372,11 +374,6 @@ h1 {
   }
 
   .info-chess {
-    top: 35rem;
-    left: 23%;
-  }
-
-  #img-chess:hover+.info-chess {
     top: 35rem;
     left: 23%;
   }
@@ -394,19 +391,11 @@ h1 {
     left: 20%;
   }
 
-  .img-marketing:hover+.info-marketing {
-    left: 20%;
-  }
-
   #img-book {
     width: 7rem;
   }
 
   .info-books {
-    left: 5%;
-  }
-
-  #img-book:hover+.info-books {
     left: 5%;
   }
 
@@ -418,19 +407,11 @@ h1 {
     right: 11%;
   }
 
-  #img-pen:hover+.info-pen {
-    right: 11%;
-  }
-
   #img-football {
     width: 5rem;
   }
 
   .info-football {
-    right: 15%;
-  }
-
-  #img-football:hover+.info-football {
     right: 15%;
   }
 
@@ -440,11 +421,6 @@ h1 {
   }
 
   .info-screen {
-    top: 32rem;
-    right: 10%;
-  }
-
-  #img-screen:hover+.info-screen {
     top: 32rem;
     right: 10%;
   }
@@ -476,10 +452,6 @@ h1 {
     top: 15rem;
   }
 
-  #img-chess:hover+.info-chess {
-    top: 15rem;
-  }
-
   #img-facebook {
     width: 5rem;
     top: 15rem;
@@ -493,10 +465,6 @@ h1 {
   }
 
   .info-marketing {
-    top: 15rem;
-  }
-
-  .img-marketing:hover+.info-marketing {
     top: 15rem;
   }
 
@@ -514,10 +482,6 @@ h1 {
     top: 13rem;
   }
 
-  #img-pen:hover+.info-pen {
-    top: 13rem;
-  }
-
   #img-football {
     width: 5rem;
     top: 7rem;
@@ -528,10 +492,6 @@ h1 {
     top: 7rem;
   }
 
-  #img-football:hover+.info-football {
-    top: 7rem;
-  }
-
   #img-screen {
     width: 8rem;
     top: 20rem;
@@ -539,10 +499,6 @@ h1 {
   }
 
   .info-screen {
-    top: 10rem;
-  }
-
-  #img-screen:hover+.info-screen {
     top: 10rem;
   }
 
@@ -585,10 +541,6 @@ h1 {
     top: 10rem;
   }
 
-  #img-chess:hover+.info-chess {
-    top: 10rem;
-  }
-
   #img-facebook {
     width: 3rem;
     top: 15rem;
@@ -602,10 +554,6 @@ h1 {
   }
 
   .info-marketing {
-    top: 5rem;
-  }
-
-  .img-marketing:hover+.info-marketing {
     top: 5rem;
   }
 
@@ -630,11 +578,6 @@ h1 {
     right: 6%;
   }
 
-  #img-football:hover+.info-football {
-    top: 5rem;
-    right: 6%;
-  }
-
   #img-screen {
     width: 6rem;
     top: 20rem;
@@ -642,11 +585,6 @@ h1 {
   }
 
   .info-screen {
-    top: 10rem;
-    right: 0%;
-  }
-
-  #img-screen:hover+.info-screen {
     top: 10rem;
     right: 0%;
   }
